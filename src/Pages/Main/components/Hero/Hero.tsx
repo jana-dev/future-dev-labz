@@ -12,13 +12,11 @@ const Hero = () => {
           <Typography>
             Seu filho programando com
             <br />
-            <span>
-              roblox studio
-              <img
-                src="assets/roblox-studio-logo.png"
-                alt="rblox studio logo"
-              />
-            </span>
+            <img
+              alt="roblox studio logo"
+              src="assets/roblox-studio.png"
+              className={classes.robloxLogo}
+            />
             <br />
             do zero ao primeiro jogo!
           </Typography>

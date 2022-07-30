@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
     backgroundColor: "rgba( 0, 0, 0, 0.70 )",
   },
   heroSlogan: {
-    top: 120,
+    top: 100,
     width: "70%",
     display: "flex",
     flexWrap: "wrap",
@@ -58,6 +58,32 @@ const useStyles = makeStyles(() => ({
         fontWeight: 600,
         color: "#C77A44",
       },
+    },
+  },
+  robloxLogo: {
+    width: "80%",
+    position: "relative",
+    animation: "$pulse 0.7s infinite",
+    "animation-direction": "alternate",
+  },
+  "@-webkit-keyframes pulse": {
+    "0%": {
+      "-webkit-transform": "scale(1)",
+      "-webkit-filter": "brightness(100%)",
+    },
+    "100%": {
+      "-webkit-transform": "scale(1.02)",
+      "-webkit-filter": "brightness(150%)",
+    },
+  },
+  "@keyframes pulse": {
+    "0%": {
+      transform: "scale(1)",
+      filter: "brightness(100%)",
+    },
+    "100%": {
+      transform: "scale(1.02)",
+      filter: "brightness(150%)",
     },
   },
   heroButton: {
