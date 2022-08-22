@@ -1,7 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 
 import { useStyles } from "./Hero.styles";
-import StyledButton from "../../../../components/StyledButton/StyledButton";
 
 const Hero = () => {
   const classes = useStyles();
@@ -29,12 +28,6 @@ const Hero = () => {
             conhecimentos e desenvolver
             <span> habilidades na programação!</span>
           </Typography>
-        </Grid>
-        <Grid className={classes.heroButton}>
-          <StyledButton
-            buttonText="comece agora!"
-            handleClick={() => alert("teste")}
-          />
         </Grid>
       </Grid>
     </Grid>

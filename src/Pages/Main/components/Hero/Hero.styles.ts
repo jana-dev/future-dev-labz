@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
   heroContent: {
     height: "100%",
     display: "flex",
-    position: "relative",
+    // position: "relative",
     alignItems: "center",
     flexDirection: "column",
     justifyContent: "center",
@@ -20,11 +20,11 @@ const useStyles = makeStyles(() => ({
     backgroundColor: "rgba( 0, 0, 0, 0.70 )",
   },
   heroSlogan: {
-    top: 100,
+    top: 120,
     width: "70%",
     display: "flex",
     flexWrap: "wrap",
-    position: "absolute",
+    // position: "absolute",
     justifyContent: "center",
     marginTop: "24px!important",
     "& > p:nth-of-type(1)": {
@@ -63,32 +63,81 @@ const useStyles = makeStyles(() => ({
   robloxLogo: {
     width: "80%",
     position: "relative",
-    animation: "$pulse 0.7s infinite",
-    "animation-direction": "alternate",
+    "&:hover": {
+      animation: "$shake 0.8s infinite",
+      // "animation-direction": "alternate",
+      "animation-iteration-count": "both infinite",
+    },
   },
-  "@-webkit-keyframes pulse": {
+  "@keyframes shake": {
     "0%": {
-      "-webkit-transform": "scale(1)",
-      "-webkit-filter": "brightness(100%)",
+      transform: "translate(1px, 1px) rotate(0deg)",
+    },
+    "10%": {
+      transform: "translate(-1px, -2px) rotate(-1deg)",
+    },
+    "20%": {
+      transform: "translate(-3px, 0px) rotate(1deg)",
+    },
+    "30%": {
+      transform: "translate(3px, 2px) rotate(0deg)",
+    },
+    "40%": {
+      transform: "translate(1px, -1px) rotate(1deg)",
+    },
+    "50%": {
+      transform: "translate(-1px, 2px) rotate(-1deg)",
+    },
+    "60%": {
+      transform: "translate(-3px, 1px) rotate(0deg)",
+    },
+    "70%": {
+      transform: "translate(3px, 1px) rotate(-1deg)",
+    },
+    "80%": {
+      transform: "translate(-1px, -1px) rotate(1deg)",
+    },
+    "90%": {
+      transform: "translate(1px, 2px) rotate(0deg)",
     },
     "100%": {
-      "-webkit-transform": "scale(1.02)",
-      "-webkit-filter": "brightness(150%)",
+      transform: "translate(1px, -2px) rotate(-1deg)",
     },
   },
-  "@keyframes pulse": {
+  "@-webkit-keyframes shake": {
     "0%": {
-      transform: "scale(1)",
-      filter: "brightness(100%)",
+      "-webkit-transform": "translate(1px, 1px) rotate(0deg)",
+    },
+    "10%": {
+      "-webkit-transform": "translate(-1px, -2px) rotate(-1deg)",
+    },
+    "20%": {
+      "-webkit-transform": "translate(-3px, 0px) rotate(1deg)",
+    },
+    "30%": {
+      "-webkit-transform": "translate(3px, 2px) rotate(0deg)",
+    },
+    "40%": {
+      "-webkit-transform": "translate(1px, -1px) rotate(1deg)",
+    },
+    "50%": {
+      "-webkit-transform": "translate(-1px, 2px) rotate(-1deg)",
+    },
+    "60%": {
+      "-webkit-transform": "translate(-3px, 1px) rotate(0deg)",
+    },
+    "70%": {
+      "-webkit-transform": "translate(3px, 1px) rotate(-1deg)",
+    },
+    "80%": {
+      "-webkit-transform": "translate(-1px, -1px) rotate(1deg)",
+    },
+    "90%": {
+      "-webkit-transform": "translate(1px, 2px) rotate(0deg)",
     },
     "100%": {
-      transform: "scale(1.02)",
-      filter: "brightness(150%)",
+      "-webkit-transform": "translate(1px, -2px) rotate(-1deg)",
     },
-  },
-  heroButton: {
-    bottom: 120,
-    position: "absolute",
   },
   heroImage: {
     bottom: 10,
