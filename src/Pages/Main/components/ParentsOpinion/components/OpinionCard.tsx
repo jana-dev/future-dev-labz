@@ -8,10 +8,12 @@ interface OpinionCardProps {
 }
 
 const OpinionCard = ({ name, opinion, photo }: OpinionCardProps) => {
-  const classes = useStyles({photo});
+  const classes = useStyles();
   return (
     <Grid container direction="column" className={classes.opinionCard}>
-      <Grid item className={classes.parentPhoto} />
+      <Grid item className={classes.parentPhoto}>
+        <img src={photo} alt=""/>
+      </Grid>
       <Grid item className={classes.parentText}>
         <Typography>{name}</Typography>
         <Typography>{opinion}</Typography>

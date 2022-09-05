@@ -1,12 +1,9 @@
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-interface Props {
-  photo: string;
-}
-
-const useStyles = makeStyles<Theme, Props>((theme: Theme) => ({
+const useStyles = makeStyles<Theme>((theme: Theme) => ({
   opinionCard: {
+    padding: 20,
     display: "flex",
     alignItems: "center",
     width: "290px!important",
@@ -14,13 +11,15 @@ const useStyles = makeStyles<Theme, Props>((theme: Theme) => ({
   parentPhoto: {
     width: 100,
     height: 100,
-    borderRadius: 50,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    marginBottom: "20px!important",
-    backgroundImage: "url(/assets/profiles/1.jpg)",
-    // backgroundImage: (props: Props) => `url(${props.photo})`,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    "& > img": {
+      width: "100%",
+      height: "100%",
+      borderRadius: "50%",
+      marginBottom: "20px!important",
+    },
   },
   parentText: {
     textAlign: "center",
