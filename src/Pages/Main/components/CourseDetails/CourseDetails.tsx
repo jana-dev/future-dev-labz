@@ -21,7 +21,7 @@ const CourseDetails = () => {
       spacing={2}
       className={classes.courseDetailsContainer}
     >
-      <Grid item container justifyContent="center" alignItems="center" spacing={2}>
+      <Grid item container justifyContent="center" alignItems="center">
         <Grid item>
           <CardDetail
             icon={<AccessTime />}
@@ -50,7 +50,7 @@ const CourseDetails = () => {
           />
         </Grid>
       </Grid>
-      <Grid item container justifyContent="center" spacing={2}>
+      <Grid item container justifyContent="center">
         <Grid item>
           <CardDetail
             icon={<SentimentVerySatisfiedOutlined />}

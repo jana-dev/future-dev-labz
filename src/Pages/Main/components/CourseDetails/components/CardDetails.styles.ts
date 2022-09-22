@@ -3,11 +3,13 @@ import { makeStyles } from "@mui/styles";
 const useStyles = makeStyles(() => ({
   cardContainer: {
     width: 210,
+    margin: 20,
     height: 210,
     padding: 20,
     minHeight: 120,
     borderRadius: 20,
-    backgroundColor: "white"
+    backgroundColor: "white",
+    boxShadow: "0px 0px 15px 0px rgba(0,0,0,0.20)",
   },
   cardIcon: {
     display: "flex",

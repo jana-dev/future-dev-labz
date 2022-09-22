@@ -1,3 +1,4 @@
+import Faq from "./components/Faq/Faq";
 import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer/Footer";
 import Header from "../../components/Header/Header";
@@ -7,6 +8,14 @@ import CourseContent from "./components/CourseContent/CourseContent";
 import ParentsOpinion from "./components/ParentsOpinion/ParentsOpinion";
 
 const Main = () => {
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") {
+      document.title = "SEU FILHO RUMO AO FUTURO 🚀";
+    } else {
+      document.title = "Future - Dev Labz";
+    }
+  });
+
   return (
     <>
       <Header />
@@ -16,6 +25,7 @@ const Main = () => {
       <CourseContent />
       <ParentsOpinion />
       <Footer />
+      <Faq />
     </>
   );
 };

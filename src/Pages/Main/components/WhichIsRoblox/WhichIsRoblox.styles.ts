@@ -2,9 +2,10 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles(() => ({
   whichIsContainer: {
+    paddingTop: 60,
     display: "flex",
-    height: "100vh",
     flexWrap: "wrap",
+    paddingBottom: 80,
     alignItems: "center",
     backgroundSize: "cover",
     justifyContent: "center",

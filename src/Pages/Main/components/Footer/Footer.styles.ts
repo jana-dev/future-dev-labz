@@ -4,6 +4,7 @@ const useStyles = makeStyles(() => ({
   footerContainer: {
     bottom: 0,
     height: 80,
+    zIndex: 9999,
     width: "100%",
     display: "flex",
     color: "#E3E3E3",
