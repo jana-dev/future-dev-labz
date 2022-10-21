@@ -4,6 +4,7 @@ import { useStyles } from "./StyledButton.styles";
 interface ButtonProps {
   buttonText: string;
   handleClick: () => void;
+  color?: string;
 }
 
 const StyledButton = ({ buttonText, handleClick }: ButtonProps) => {
@@ -14,5 +15,9 @@ const StyledButton = ({ buttonText, handleClick }: ButtonProps) => {
     </Button>
   );
 };
+
+StyledButton.defaultProps = {
+  buttonText: "Botão"
+}
 
 export default StyledButton;
